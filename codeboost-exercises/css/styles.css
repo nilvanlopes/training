@@ -151,3 +151,29 @@ header .menu-mobile {
     margin-top: 0.8rem;
     line-height: 150%;
 }
+
+.s-card-featured .secondary-area {
+    margin-top: 11.2rem;
+}
+
+.s-card-featured .secondary-area .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+
+.s-card-featured .secondary-area .all-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+}
+
+.s-card-featured .secondary-area .all-icons .image {
+    display: flex;
+    width: 17.6rem;
+    height: 11.2rem;
+    background-color: var(--gray-colors-200);
+    align-items: center;
+    justify-content: center;
+}
