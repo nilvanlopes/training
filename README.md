@@ -2,4 +2,4 @@
 just me studying
 
 
-all the projects are in the branches, just switch between them
+all the (unfinished) projects are in the branches, just switch between them
