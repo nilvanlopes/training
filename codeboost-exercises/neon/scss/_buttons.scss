@@ -24,12 +24,12 @@
     color: $brand-ligth-blue;
     transition: all .3s;
 
-    &hover {
+    &:hover {
         background-color: $brand-ligth-blue;
         color: white;
     }
 
-    &white {
+    &.white {
         border: 1px solid white;
         color: white;
 
