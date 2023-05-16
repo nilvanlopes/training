@@ -287,3 +287,45 @@
         }
     }
 }
+
+.s-comments {
+    padding-top: 13.4rem;
+
+    .top {
+        @include flex(row, flex-end, space-between);
+        margin-bottom: 4rem;
+
+        h2 {
+            span {
+                display: block;
+                color: $gray-200;
+                margin-bottom: 1.4rem;
+            }
+        }
+
+        .swiper-pagination {
+            position: relative;
+            width: auto;
+
+            .swiper-pagination-bullet {
+                background: $brand-yellow;
+                opacity: 0.8;
+                border-radius: 12px;
+                transition: all .3s;
+
+                &:not(:first-child) {
+                    margin-left: 0.4rem;
+                }
+
+                &-active {
+                    opacity: 1;
+                    width: 1.723rem;
+                }
+            }
+        }
+    }
+
+    .cards-comments {
+        overflow: hidden;
+    }
+}
