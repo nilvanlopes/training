@@ -38,6 +38,57 @@ header {
                     }
                 }
             }
+
+            .menu-mobile {
+                display: none;
+                margin-left: 4rem;
+            }
+        }
+    }
+
+    @include responsive(1085px) {
+        .container {
+            nav {
+                ul {
+                    margin-right: 3rem;
+
+                    li {
+                        &:not(:first-child) {
+                            margin-left: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(991px) {
+        .container {
+            .logo {
+                max-width: 10.8rem;
+            }
+
+            nav {
+                ul {
+                    display: none;
+                }
+
+                .menu-mobile {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @include responsive(480px) {
+        height: 7.3rem;
+
+        .container {
+            nav {
+                .btn-secondary {
+                    display: none;
+                }
+            }
         }
     }
 }
