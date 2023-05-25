@@ -261,6 +261,7 @@
                 }
 
                 .cartoes {
+                    margin: 0 auto;
                     max-width: 30.5rem;
                     height: 24.8rem;
 
@@ -534,10 +535,10 @@
                 .pejota {
                     background-position: 0 0;
                     margin: auto;
-                    width: 80.4rem;
+                    width: 80rem;
 
                     .neon-pj {
-                        margin-right: -2.8rem;
+                        margin-right: -3.1rem;
                     }
                 }
             }
@@ -566,6 +567,51 @@
                     }
                 }
             }
+        }
+    }
+
+    @include responsive(866px) {
+        .container {
+            .rigth-area {
+                max-width: 100%;
+                flex-direction: column;
+
+                .pejota {
+                    background-size: contain;
+                    margin: auto;
+                    width: 100%;
+                    flex-direction: column;
+                    padding: 0 2.5rem;
+
+                    .txt {
+                        width: 100%;
+                        max-width: 100%;
+
+                        h2 {
+                            margin-top: 1rem;
+                        }
+
+                        h2,
+                        h3,
+                        p {
+                            text-align: center;
+                            margin: 2rem 0;
+                            max-width: 100%;
+                        }
+
+                        .buttons {
+                            justify-content: center;
+                        }
+                    }
+
+                    .neon-pj {
+                        margin: 0;
+                        margin-top: 2rem;
+                    }
+
+                }
+            }
+
         }
     }
 }
