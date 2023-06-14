@@ -431,6 +431,7 @@
             width: 100%;
             height: 41rem;
             background: url("../img/bg-box-card-neon.svg") no-repeat;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -494,7 +495,8 @@
                 max-width: 73rem;
 
                 .pejota {
-                    background-position: 132%;
+                    background-position: 172%;
+                    background-size: 110%;
 
                     .neon-pj {
                         margin-right: 1rem;
@@ -534,6 +536,7 @@
 
                 .pejota {
                     background-position: 0 0;
+                    background-size: auto;
                     margin: auto;
                     width: 80rem;
 
@@ -577,7 +580,9 @@
                 flex-direction: column;
 
                 .pejota {
+                    background: linear-gradient(to right, #00a5f0, #03e4e7);
                     background-size: contain;
+                    border-radius: 10px;
                     margin: auto;
                     width: 100%;
                     flex-direction: column;
@@ -608,10 +613,35 @@
                         margin: 0;
                         margin-top: 2rem;
                     }
-
                 }
             }
 
+            .left-area {
+                margin-top: 12.5rem;
+            }
+        }
+    }
+
+    @include responsive(666px) {
+        .container {
+            .left-area {
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-top: 20rem;
+                gap: 5rem;
+            }
+        }
+    }
+
+    @include responsive(507px) {
+        .container {
+            margin-top: 10rem;
+        }
+    }
+
+    @include responsive(480px) {
+        .container {
+            margin-top: -10.4rem;
         }
     }
 }
