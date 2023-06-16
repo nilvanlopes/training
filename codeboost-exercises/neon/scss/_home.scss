@@ -810,4 +810,131 @@
             }
         }
     }
+
+    @include responsive(1200px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .text {
+                max-width: 75%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    text-align: center;
+                    max-width: 80%;
+                }
+            }
+
+            .image {
+                margin-right: 0;
+                left: 0;
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    @include responsive(900px) {
+        .container {
+            padding-top: 8.6rem;
+            padding-bottom: 8.1rem;
+
+            .text {
+                max-width: 100%;
+            }
+
+            .image {
+                max-width: 58.2rem;
+                height: 63.3rem;
+
+                img {
+                    &.circle {
+                        width: 100%;
+                    }
+
+                    &.app-comprovante {
+                        z-index: 2;
+                    }
+
+                    &.app-cadastrar {
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(480px) {
+        .container {
+            padding-top: 5.7rem;
+            padding-bottom: 7.2rem;
+
+            .text {
+                h2 {
+                    font-size: 2.6rem;
+                    font-weight: 600;
+                    max-width: 100%;
+                    margin-bottom: 3.9rem;
+
+                    span {
+                        font-size: 2.4rem;
+                    }
+                }
+
+                ul {
+                    margin-bottom: 4.4rem;
+
+                    li {
+                        flex-direction: column;
+                        align-items: center;
+
+                        &:not(:last-child) {
+                            margin-bottom: 5rem;
+                        }
+
+                        .icon {
+                            margin-right: 0;
+                            margin-bottom: 1.6rem;
+                        }
+
+                        .desc {
+                            h4 {
+                                text-align: center;
+                                max-width: 30rem;
+                            }
+
+                            p {
+                                text-align: center;
+                                font-size: 1.4rem;
+                                max-width: 21rem;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .image {
+                max-width: 35.7rem;
+                height: 46.9rem;
+
+                img {
+                    &.app-comprovante {
+                        max-width: 16.8rem;
+                        bottom: initial;
+                        top: 5.8rem;
+                    }
+
+                    &.app-cadastrar {
+                        max-width: 16.8rem;
+                        left: initial;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
 }
