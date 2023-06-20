@@ -85,12 +85,14 @@
                 }
 
                 .card-back {
+                    animation: floating 6s infinite;
                     bottom: 4.6rem;
                     right: 8.6rem;
                     max-width: 35.2rem;
                 }
 
                 .card-front {
+                    animation: floating 7s infinite;
                     top: 4.1rem;
                     left: 0;
                     max-width: 43.5rem;
@@ -801,11 +803,13 @@
                 &.app-comprovante {
                     left: 0;
                     bottom: 4.7rem;
+                    z-index: 2;
                 }
 
                 &.app-cadastrar {
                     top: 0.3rem;
                     left: 25.8rem;
+                    z-index: 2;
                 }
             }
         }
@@ -936,5 +940,19 @@
                 }
             }
         }
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    66% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
