@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+
 }
 
 .container
@@ -20,6 +21,8 @@
     height: 50rem;
     background: #f2f4f7;
     padding: 1rem;
+    border: 1px solid;
+    border-radius: 15px;
 }
 
 h1
@@ -62,4 +65,68 @@ h2
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.pokemons
+{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    height: 108px;
+    justify-content: space-between;
+}
+
+.pokemon
+{
+    width: 50%;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #38bf4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pokemon .nomeNumero
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemon .nomeNumero label,
+.pokemon .typeIMG .types label
+{
+    font-size: 10px;
+    color: #f2f4f7;
+}
+
+.pokemon .typeIMG
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon .typeIMG .types
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pokemon .typeIMG .types .type
+{
+    background-color: #35a349;
+    border-radius: 15px;
+    padding: 3px 7px;
+    width: 50px;
+}
+
+.pokemon .typeIMG .types .type i
+{
+    background-color: #35a349;
+    border-radius: 15px;
+    font-size: 10px;
 }
