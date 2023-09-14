@@ -44,6 +44,96 @@ h2
 
 }
 
+.normal
+{
+    background-color: #a6a877;
+}
+
+.grass
+{
+    background-color: #77c850;
+}
+
+.fire
+{
+    background-color: #ee7f30;
+}
+
+.water
+{
+    background-color: #678fee;
+}
+
+.electric
+{
+    background-color: #f7cf2e;
+}
+
+.ice
+{
+    background-color: #98d5d7;
+}
+
+.ground
+{
+    background-color: #dfbf69;
+}
+
+.flying
+{
+    background-color: #a98ff0;
+}
+
+.poison
+{
+    background-color: #a040a0;
+}
+
+.fighting
+{
+    background-color: #bf3029;
+}
+
+.psychic
+{
+    background-color: #f65687;
+}
+
+.dark
+{
+    background-color: #725847;
+}
+
+.rock
+{
+    background-color: #b8a137;
+}
+
+.bug
+{
+    background-color: #a8b720;
+}
+
+.ghost
+{
+    background-color: #6e5896;
+}
+
+.steel
+{
+    background-color: #b9b7cf;
+}
+
+.dragon
+{
+    background-color: #6f38f6;
+}
+
+.fairy
+{
+    background-color: #f9aec7;
+}
+
 .pesquisa
 {
     display: flex;
@@ -83,10 +173,8 @@ h2
 .pokemon
 {
     width: 48%;
-    border: 1px solid;
     border-radius: 15px;
     padding: 10px;
-    background-color: #38bf4b;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -96,6 +184,7 @@ h2
 {
     display: flex;
     justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .pokemon .nomeNumero label,
@@ -103,6 +192,7 @@ h2
 {
     font-size: 10px;
     color: #f2f4f7;
+
 }
 
 .pokemon .typeIMG
@@ -122,20 +212,33 @@ h2
 
 .pokemon .typeIMG .types .type
 {
-    background-color: #35a349;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
     border-radius: 15px;
     padding: 3px 7px;
-    width: 62px;
-}
-
-.pokemon .typeIMG .types .type i
-{
-    background-color: #35a349;
-    border-radius: 15px;
-    font-size: 10px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemon .typeIMG img
 {
     width: 40px;
+}
+
+.pagination
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination button
+{
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
