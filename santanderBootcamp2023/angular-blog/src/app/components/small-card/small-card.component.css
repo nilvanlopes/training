@@ -1,0 +1,26 @@
+.small-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.small-card .image img {
+    max-width: 230px;
+}
+
+p {
+    color: grey;
+    font-size: .9rem;
+}
+
+.small-card .manchete {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.small-card .manchete h3 {
+    color: white;
+}
