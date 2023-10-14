@@ -1,0 +1,21 @@
+.menu-bar {
+    margin: 10px 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu-bar a img {
+    border-radius: 50%;
+    max-width: 100px;
+}
