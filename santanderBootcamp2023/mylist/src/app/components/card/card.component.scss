@@ -1,0 +1,17 @@
+.card {
+    display: inline-block;
+    position: relative;
+
+    .badge {
+        width: 125px;
+        height: 30px;
+        background-color: red;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
+}
