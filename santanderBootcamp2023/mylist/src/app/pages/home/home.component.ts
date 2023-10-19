@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   series?: Series
-
+  serie: any
   constructor(private service: TmdbService) {
 
   }
@@ -18,11 +18,8 @@ export class HomeComponent implements OnInit {
       {
         next: res => {
           this.series = res
-          for (const key in this.series.results) {
-            console.log(this.series.results[key].id);
-            console.log(this.series.results[key].name);
-            console.log(this.series.results[key].backdrop_path);
-          }
+          this.serie = this.series.results
+          console.log(this.serie);
         },
         error: err => console.log(err)
       }
