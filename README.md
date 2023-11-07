@@ -13,6 +13,10 @@ Just me studying
 
 ![modulo-sass](https://github.com/314u/training/assets/28903634/58349729-f925-4bcd-81c8-de5bbd5f4789)
 
+## Projeto pokedex BootcampSantander2023 pela DIO
+
+![pokedex](https://github.com/nilvanlopes/training/assets/28903634/fae68b7e-a1a7-44dd-a6ea-d80fd78e1388)
+
 
 *all the (unfinished) projects are in the branches, just switch between them*
 
