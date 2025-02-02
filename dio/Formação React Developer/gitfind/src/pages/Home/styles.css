@@ -1,0 +1,28 @@
+.conteudo{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    .background{
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 60%;
+        margin-right: 90px;
+        margin-top: 40px;
+        color: white;
+        .repolist{
+
+            h2{
+                margin: 20px 0px;
+                text-align: center;
+            }
+        }
+    }
+}

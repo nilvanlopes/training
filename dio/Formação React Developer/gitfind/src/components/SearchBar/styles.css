@@ -1,0 +1,10 @@
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 28px;
+
+    input{
+        flex: 1;
+    }
+}

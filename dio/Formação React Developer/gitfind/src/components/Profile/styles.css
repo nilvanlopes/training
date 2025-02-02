@@ -1,0 +1,28 @@
+.profile{
+    font-family: 'Roboto';
+    color: #999999;
+    display: flex;
+    margin: 20px 0px;
+    gap: 10px;
+    .image{
+        img{
+            width: 100%;
+            min-width: 100px;
+            max-width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .name_and_description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap :10px;
+        .name{
+            p{
+                font-size: small;
+            }
+        }
+    }
+
+}
